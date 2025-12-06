@@ -22,8 +22,8 @@ A game changer in the world of browser games ✊🏿
 
 ### Requirements 📡
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-source ~/.bashrc
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+- source ~/.bashrc
 # dogrula 
 - nvm --version
 - nvm install 20
