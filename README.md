@@ -25,16 +25,19 @@ A game changer in the world of browser games ✊🏿
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.bashrc
 # dogrula 
-nvm --version
-nvm install 20
-nvm use 20
+- nvm --version
+- nvm install 20
+- nvm use 20
 
 - sudo apt install redis-server -y
+  
 - sudo apt install mysql-server -y
+  
 - sudo apt install nginx-full -y
+  
 - sudo systemctl enable nginx
 - sudo systemctl start nginx
-- 
+  
 - [nodejs environment](https://nodejs.org/en/) (>=20)
 - [redis](https://redis.io/) or [redis-for-windows](https://github.com/redis-windows/redis-windows) in version **6.2.0 or above** as database for storìng the canvas
 - mysql or mariadb
