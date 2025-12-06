@@ -17,11 +17,6 @@ convert ../ocean.png -crop 128x128 +adjoin ocean_tiles%02d.png
 - upscale and convert to black and white
 
 ```
-mogrify -resize 2048x2048 -colors 2 -white-threshold 80% -black-threshold 80% ocean_tiles*.png
-```
-or without dithering:
-
-```
 mogrify +dither -resize 2048x2048 -colors 2 -white-threshold 80% -black-threshold 80% ocean_tiles*.png
 ```
 - create subfolders
@@ -37,5 +32,5 @@ for file in ./ocean_tiles*.png; do NUM=`echo $file | sed -e 's/.*ocean_tiles//' 
 - Draws the 2048x2048 tiles from the ./ocean directory on the canvas. Uses localhost:6379 as redis url, if you need a different one, edit it in the drawOcean.js file.
 
 ```
-npm run babel-node ./utils/ocean-tiles/drawOcean.js
+npx babel-node ./utils/ocean-tiles/drawOcean.js
 ```
