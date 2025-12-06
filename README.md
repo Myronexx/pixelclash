@@ -22,6 +22,19 @@ A game changer in the world of browser games ✊🏿
 
 ### Requirements 📡
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+# dogrula 
+nvm --version
+nvm install 20
+nvm use 20
+
+- sudo apt install redis-server -y
+- sudo apt install mysql-server -y
+- sudo apt install nginx-full -y
+- sudo systemctl enable nginx
+- sudo systemctl start nginx
+- 
 - [nodejs environment](https://nodejs.org/en/) (>=20)
 - [redis](https://redis.io/) or [redis-for-windows](https://github.com/redis-windows/redis-windows) in version **6.2.0 or above** as database for storìng the canvas
 - mysql or mariadb
@@ -29,9 +42,9 @@ A game changer in the world of browser games ✊🏿
 Make sure to set-up an own user with password and database for pixelplanet in SQL, i.e. in `mysql` run as `root`:
 
 ```
-CREATE DATABASE pixelplanet;
-CREATE USER 'pixelplanet'@'localhost' IDENTIFIED BY 'sqlpassword';
-GRANT ALL PRIVILEGES ON pixelplanet.* TO 'pixelplanet'@'localhost';
+CREATE DATABASE pixelclash;
+CREATE USER 'pixelclash'@'localhost' IDENTIFIED BY 'YTGezP';
+GRANT ALL PRIVILEGES ON pixelclash.* TO 'pixelclash'@'localhost';
 ```
 
 ### Download 📥
@@ -47,13 +60,13 @@ Those are options you will most likely want to adjust:
 
 | Variable       | Description              |  Example                |
 |----------------|:-------------------------|------------------------:|
-| PORT           | Own Port                 | 5000                    |
+| PORT           | Own Port                 | 3000                    |
 | HOST           | Own Host                 | "localhost"             |
 | REDIS_URL      | URL:PORT of redis server | "redis://localhost:6379"|
 | MYSQL_HOST     | MySql Host               | "localhost"             |
-| MYSQL_USER     | MySql User               | "pixelplanet"           |
-| MYSQL_PW       | MySql Password           | "sqlpassword"           |
-| MYSQL_DATABASE | MySql Database           | "pixelplanet"           |
+| MYSQL_USER     | MySql User               | "pixelclash"           |
+| MYSQL_PW       | MySql Password           | "YTGezP"           |
+| MYSQL_DATABASE | MySql Database           | "pixelclash"           |
 
 #### Canvas Configuration
 
@@ -106,14 +119,16 @@ npm install
 3. Start with
 
 ```
-npm start
+pm2 start server.js
 ```
 
 Now you can access pixelplanet on `http://localhost:5000` or whatever other *HOST* and *PORT* you chose inside `config.ini`.
 
 ### Stopping 🛑
 
-Press Ctrl-C
+pm2 stop all
+# or 
+pm2 delete all
 
 ### What to do next❓
 
@@ -128,15 +143,18 @@ Read [DEPLOYMENT.md](./doc/DEPLOYMENT.md) for tips on how to run it on a server.
 Checkout repository
 
 ```
-git clone https://git.gs-os.com/ppfun/pixelplanet.git
-cd pixelplanet
+git clone https://github.com/Myronexx/pixelclash.git
+cd pixelclash
 ```
 
 Install packages and build
 
 ```
 npm install
+
 npm run build
+# or
+npm run build -- --langs en
 ```
 
 All needed files to run it got created in `./dist`. You can copy it to wherever you want to run pixelplanet.
