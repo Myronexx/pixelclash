@@ -1,0 +1,398 @@
+:root {
+  --bg-0: #0a0f14;
+  --bg-1: #0c1014;
+  --bg-2: #0e1217;
+  --bg-3: #121720;
+  --surface-0: #12161c;
+  --surface-1: #161b22;
+  --surface-2: #11161c;
+  --text-0: #e6edf3;
+  --text-1: #d6dde5;
+  --text-2: #cfe3ff;
+  --border-0: #1a1f24;
+  --border-1: #1a2027;
+  --accent-0: #7fb7ff;
+  --accent-1: #4a8af4;
+  --accent-2: #8ec5ff;
+  --success-0: #90ff90;
+  --warn-0: #fff0b3;
+  --error-0: #ff91a6;
+  --focus-0: rgba(80, 140, 220, 0.45);
+  --lift-0: rgba(80, 140, 220, 0.12);
+  --shadow-0: rgba(0, 0, 0, 0.45);
+  --round-lg: 10px;
+  --round-md: 8px;
+  --round-sm: 6px;
+}
+a:link {
+  color: var(--accent-0);
+}
+a:visited {
+  color: #a5d17a;
+}
+a:hover {
+  color: #d9ffa0;
+}
+.modallink {
+  color: var(--accent-0);
+}
+.modallink:hover {
+  color: #d9ffa0;
+}
+.inarea {
+  border-color: #1b2026;
+}
+.tab-list-item {
+  color: var(--text-1);
+}
+.tab-list-item.active {
+  background-color: #0f1318;
+  color: #ffffff;
+}
+.tab-list-item:not(.active):hover {
+  background-color: var(--bg-1);
+}
+tr:nth-child(even) {
+  background-color: var(--bg-2);
+}
+.window,
+.popup {
+  background-color: var(--bg-0);
+  color: var(--text-0);
+}
+.win-title {
+  background-color: var(--bg-3);
+}
+.win-topbar,
+.modal-topbtn {
+  color: var(--text-0);
+}
+.win-title:hover {
+  background-color: #151c26;
+}
+.win-topbtn,
+.modal-topbtn {
+  background-color: #151a20;
+}
+.win-topbtn:hover,
+.modal-topbtn:hover {
+  background-color: #1a2027;
+}
+.actionbuttons,
+.coorbox,
+.onlinebox,
+.cooldownbox,
+.palettebox,
+.historyselect {
+  background-color: rgba(8, 12, 16, 0.92);
+  color: var(--text-0);
+}
+#pencilbutton.ppencil {
+  background-color: rgba(110, 129, 25, 0.85);
+}
+#pencilbutton.phistory {
+  background-color: rgba(26, 74, 102, 0.85);
+}
+#pencilbutton.poverlay {
+  background-color: rgba(104, 28, 28, 0.85);
+}
+.menu > div {
+  z-index: 1;
+  background-color: rgba(7, 10, 14, 0.9);
+}
+.modal,
+.Alert {
+  background: #0a0e13;
+  color: var(--text-0);
+}
+.deletelistitem.selected {
+  background-color: #4a2f35;
+}
+.deletelistitem.unselected:hover {
+  background-color: #412c2f;
+}
+.modal-content,
+.win-content,
+.popup-content,
+.baninfo {
+  color: var(--text-0);
+}
+h3,
+h4 {
+  color: var(--text-2);
+}
+.modaldesc {
+  color: hsla(215, 80%, 92%, 0.72);
+}
+.modaldivider {
+  background-color: hsla(210, 6%, 60%, 0.28);
+}
+.channeldd,
+.contextmenu {
+  background-color: var(--surface-0);
+  color: var(--text-0);
+}
+.chn,
+.chntype,
+.contextmenu > div {
+  background-color: var(--surface-1);
+}
+.chn.selected,
+.chn:hover,
+.chntype.selected,
+.chntype:hover,
+.contextmenu > div:hover {
+  background-color: var(--surface-2);
+}
+.modalinfo,
+.tmpitm-desc span {
+  color: #d0d0d0;
+}
+.modalcvtext,
+.tmpitm-desc {
+  color: hsla(215, 80%, 92%, 0.7);
+}
+.overlay {
+  background-color: rgba(160, 180, 200, 0.45);
+}
+.chatname {
+  background-color: #151920;
+}
+.mention {
+  background-color: #191a17;
+}
+.chatmsg:hover {
+  background-color: #0f141a55;
+}
+.msg {
+  color: var(--text-0);
+}
+.msg.info {
+  color: var(--error-0);
+}
+.msg.event {
+  color: var(--accent-2);
+}
+.msg.greentext {
+  color: var(--success-0);
+}
+.ebex {
+  color: var(--warn-0);
+}
+.chatlink {
+  color: #ffdcb3;
+}
+.statvalue {
+  color: #ddb7ff;
+}
+.actionbuttons:hover,
+.onlinebox:hover,
+.coorbox:hover,
+.menu > div:hover {
+  background-color: #0c1116;
+  box-shadow: 2px 2px #5bc0de29;
+}
+.brush-preset {
+  background: rgba(8, 12, 16, 0.5);
+  color: var(--text-1);
+  border-color: var(--border-0);
+}
+.brush-preset.active {
+  outline-color: #4a8af4;
+}
+.brush-mini-grid > div {
+  background: #0f141a;
+}
+.brush-mini-grid > div.on {
+  background: var(--text-1);
+}
+.brush-editor .cell {
+  background: var(--surface-0);
+  border-color: var(--border-0);
+}
+.brush-editor .cell.on {
+  background: var(--text-1);
+}
+.brush-card.custom-active {
+  align-items: flex-start;
+}
+.c-last-hour {
+  color: #00ff66;
+}
+.AnnouncementBar {
+  background-color: rgba(8, 12, 16, 0.96);
+  color: var(--text-0);
+}
+.AnnouncementBar.var-info {
+  border-left-color: var(--accent-0);
+}
+.AnnouncementBar.var-success {
+  border-left-color: var(--success-0);
+}
+.AnnouncementBar.var-warning {
+  border-left-color: var(--warn-0);
+}
+.AnnouncementBar.var-error {
+  border-left-color: var(--error-0);
+}
+#palettebox .selected,
+#palettebox span:hover {
+  outline: 1px solid var(--text-2);
+  box-shadow: 0 0 5px 2px var(--shadow-0);
+}
+.profilefish {
+  background-color: var(--surface-0);
+  color: var(--text-0);
+}
+.profilefish:hover {
+  opacity: 0.9;
+}
+.fishdisplay-title {
+  background-color: var(--surface-0);
+  color: var(--text-2);
+}
+.timestamp-chip {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid rgba(120, 140, 160, 0.12);
+  padding: 2px 6px;
+  border-radius: var(--round-sm);
+}
+html .timestamp-tooltip-floating {
+  background-color: var(--surface-0);
+  color: var(--text-0);
+  border: 1px solid var(--border-0);
+  box-shadow: 0 2px 8px var(--shadow-0);
+}
+.window,
+.popup,
+.modal,
+.Alert,
+.modal-content,
+.win-content,
+.popup-content,
+.actionbuttons,
+.onlinebox,
+.coorbox,
+.cooldownbox,
+.palettebox,
+.historyselect,
+.channeldd,
+.contextmenu,
+.chn,
+.chntype,
+.menu > div,
+.chatname,
+.mention,
+.brush-preset,
+.brush-editor .cell,
+.AnnouncementBar,
+.timestamp-chip,
+html .timestamp-tooltip-floating {
+  border-radius: var(--round-lg);
+}
+
+.channelbtn {
+  background-color: var(--surface-0);
+  color: var(--text-0);
+  border: 1px solid var(--border-0);
+  border-radius: var(--round-sm);
+}
+.channelbtn.selected,
+.channelbtn:hover,
+#sendbtn:hover {
+  background-color: var(--surface-2);
+}
+.chnunread {
+  color: var(--accent-1);
+}
+.notifybox {
+  background-color: var(--surface-0);
+  color: var(--text-0);
+  border: 1px solid var(--border-0);
+  border-radius: var(--round-md);
+}
+.notifybox.green {
+  background-color: var(--success-0);
+}
+.notifybox.red {
+  background-color: var(--error-0);
+}
+.hdivider {
+  border-left: 1px solid var(--border-0);
+}
+.stattext {
+  color: var(--text-1);
+}
+.errormessage {
+  color: var(--error-0);
+}
+.baninfo {
+  border: 1px solid var(--border-0);
+}
+.warn {
+  color: var(--error-0);
+}
+.expandbtn {
+  background-color: var(--accent-1);
+  color: var(--text-0);
+}
+.expandbtn:hover {
+  opacity: 0.9;
+}
+.timestamp-chip .timestamp-tooltip {
+  background-color: var(--surface-0);
+  color: var(--text-0);
+  border: 1px solid var(--border-0);
+  box-shadow: 0 2px 8px var(--shadow-0);
+}
+
+a:focus,
+.modallink:focus,
+.tab-list-item:focus,
+.win-topbtn:focus,
+.modal-topbtn:focus,
+.button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--focus-0);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--lift-0);
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #1a1f26;
+  border-radius: 8px;
+  border: 2px solid #0a0e13;
+}
+input,
+select,
+textarea,
+.inarea {
+  background-color: #0e1319;
+  color: var(--text-0);
+  border: 1px solid var(--border-1);
+  border-radius: var(--round-md);
+}
+button,
+.win-topbtn,
+.modal-topbtn,
+#pencilbutton.ppencil,
+#pencilbutton.phistory,
+#pencilbutton.poverlay {
+  color: var(--text-0);
+  border: 1px solid rgba(120, 140, 160, 0.12);
+  border-radius: var(--round-md);
+}
+table {
+  background-color: #0b1016;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(120, 140, 160, 0.08);
+  border-radius: var(--round-lg);
+  overflow: hidden;
+}
