@@ -33,4 +33,6 @@ for file in ./ocean_tiles*.png; do NUM=`echo $file | sed -e 's/.*ocean_tiles//' 
 
 ```
 npx babel-node ./utils/ocean-tiles/drawOcean.js
+or
+npx babel-node drawOcean.js
 ```
