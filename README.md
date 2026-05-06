@@ -48,6 +48,7 @@ Make sure to set-up an own user with password and database for pixelplanet in SQ
 CREATE DATABASE pixelclash;
 CREATE USER 'pixelclash'@'localhost' IDENTIFIED BY 'YTGezP';
 GRANT ALL PRIVILEGES ON pixelclash.* TO 'pixelclash'@'localhost';
+log_bin_trust_function_creators = 1
 ```
 
 ### Download 📥
